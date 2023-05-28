@@ -1,0 +1,30 @@
+/****************************************************************************
+ Java é uma linguagem fortemente tipada, ou seja, é necessário informar o tipo 
+ de variável (qual informação será guardada dentro da variável), veja o exemplo abaixo.
+ No Java, é necessário sempre colocar o ponto e vírgula.
+ 
+*******************************************************************************/
+public class Main
+{
+	public static void main(String[] args) {
+/*Conforme eu atribuo novos valores á mesma variável, o ultimo valor é o que será impresso,
+ o ultimo valor será sobreposto sobre os anteriores.*/
+	    String nome = "Thalita";
+
+/* Uma vez declarado o tipo de variável, não será necessário declarar novamente, se caso
+ for atribuido um novo valor aquela variável.*/
+	    nome = "André";
+	    nome = "Mario";
+		System.out.println("Hello " + nome + " !");
+		
+/*É possivel na declaração de variáveis, atribuir o valor diretamente ou atribuir o valor depois.*/
+		int a;
+		int b = 2;
+		a = 3;
+		System.out.println("Numbers " + b + " and "+ a);
+		
+		int soma = a+b;
+		int subtracao = a - b;
+		System.out.println("O resultado da soma e subtração é: Soma = " +soma+ " Subtração = "+subtracao);
+	}
+}
