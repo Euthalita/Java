@@ -1,0 +1,29 @@
+/******************************************************************************
+
+Quando vamos fazer a conta com números, no qual, o resultado é um número real,
+usamos o float, porém, todos os números envolvidos será usado o float
+
+*******************************************************************************/
+public class Main
+{
+	public static void main(String[] args) {
+/*Por exemplo, se usamos dois valores com int e o resultado é um float, o resultado
+será um número inteiro, não será um float.*/
+
+    int a = 3, b = 2;
+    float divisao = a/b; /*O resultado será um inteiro*/
+		System.out.println(divisao);
+		
+	/*Forma correta*/
+	float c = 3, d = 2; divisao = c/d;
+	System.out.println(divisao);
+	
+/*Suponhamos que haja muitas linhas de código e houve esse pequeno erro na declaração 
+das variáveis, ao inves, de ficar trocando todas as linhas de int para float, podemos fazer um 
+CAST.
+O cast é uma forma de mudar a forma como será demonstrado, apesar de continuar armazenada como int.*/
+    int e = 7, f = 6;
+    divisao = (float) e/f; /*O cast é o (float)*/
+    System.out.println(divisao);
+	}
+}
