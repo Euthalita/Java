@@ -1,0 +1,23 @@
+/******************************************************************************
+O operador ternario é usado quando tem dois comportamentos possíveis 
+Operador ternario = ?
+
+Esse Operador recebe o nome de ternario, porque há 3 sentenças;
+A primeira, avalia a questão (no exemplo abaixo é a variavel "fimDeSemana");
+Em segundo, mostra qual das duas msgs será impressa (há duas msg).
+Por isso, são 3 sentenças.
+*******************************************************************************/
+public class Main
+{
+	public static void main(String[] args) {
+
+		boolean fimDeSemana = false;
+	
+	//Se a variavel fimDeSemana tiver um valor verdadeiro, aparecerá a msg
+	//O ponto de interrogação é como se perguntasse se é verdadeiro ou falso
+	// Se for verdeiro aparecerá a msg "É fim de semana", cao contrario (simbolizado por :), aparecerá a msg "Não é fim de semana"
+	String mensagem = fimDeSemana ? "É fim de semana" : "Não é fim de semana";
+	//É necessário declarar que a variavel mensagem é uma String, caso contrario, dara erro
+	System.out.println(mensagem);
+	}
+}
