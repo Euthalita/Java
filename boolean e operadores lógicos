@@ -1,0 +1,20 @@
+/******************************************************************************
+Podemos fazer com o boolean como se fosse usar o if e else
+As váriaveis começam com letra minúscula e não pode colocar simbolos ou começar com 
+números
+
+*******************************************************************************/
+public class Main
+{
+	public static void main(String[] args) {
+	//Suponhamos que vamos fazer um algoritmo para ir a praia, usando o operador lógico &&(AND)
+		boolean fimDeSemana = true;
+		boolean fazendoSol= true;
+		
+	//Para que possamos ir a praia, usamos o && para fazer a comparação de que as duas condições são verdadeiras 
+	    boolean vamosApraia = fimDeSemana && fazendoSol;
+		System.out.println("Sim, vamos a praia "+vamosApraia);
+		
+	//O operador OU é o || 
+	}
+}
