@@ -1,0 +1,30 @@
+/******************************************************************************
+Para representar a data há um padrão usado no mundo todo, chamado de ISO 8601
+Esse padrão é usado através de outra biblioteca do Java, no qual, é necessário
+fazer a importação dessa biblioteca pelo import
+
+*******************************************************************************/
+import java.time.LocalDate;
+import java.time.format.TextStyle; //Pega todo o texto em inglês para passar para o português
+import java.util.Locale; //Transforma o texto em português
+public class Main
+{
+	public static void main(String[] args) {
+	    
+		//LocalDate é o tipo de variável
+		LocalDate hoje = LocalDate.now();
+		//Representa uma data(date), com informações locais/ regionais(local) e o horario de agora
+		System.out.println(hoje);
+		
+		//Puxa o dia da semana em inglês
+		System.out.println(hoje.getDayOfWeek());
+		
+		//Para passar para o português, usa-se o getDisplayName(), (É OUTRA BIBLIOTECA/ necessário importar)
+		//TextStyle.FULL mostra a palavra completa (é um parâmetro)
+		//Para traduzir para o português, usa-se outra biblioteca(Locale) e essa biblioteca será passada como parâmetro em getDisplayName
+		Locale brasil = new Locale("pt","BR");//Essa biblioteca representa a localidade do Brasil
+		String diaSemana = hoje.getDayOfWeek().getDisplayName(TextStyle.FULL, brasil);
+		System.out.println(diaSemana);
+		System.out.println(diaSemana.toUpperCase());
+	}
+}
