@@ -1,0 +1,14 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    String nome = "Thalita";
+	    String nome2= "João";
+	    String nome3= "joão";
+	    //O toUpperCase e os demais são métodos
+		System.out.println(nome.toUpperCase());//Deixa todas as letras maiusculas
+		System.out.println(nome.toLowerCase());//Deixa todas as letras minusculas
+		System.out.println(nome.length());//Mostra a quantidade de caracteres da string
+		System.out.println(nome.equals(nome2));//Mostra se as variaveis são iguais(true/false)
+		System.out.println(nome2.equalsIgnoreCase(nome3));//Ele mostra se as váriaveis são iguais, porém ignora as diferenças entre maiusculas e minusculas
+	}
+}
