@@ -1,0 +1,25 @@
+/******************************************************************************
+Para representar a hora usa-se uma biblioteca
+
+Diferenças entre o println e o printf:
+O printf define os formatos e depois os valores, como na linguagem C
+O println escreve as linhas uma abaixo da outra, não é necessário indicar quebra 
+de linhas
+
+Quebra de linha = %n
+*******************************************************************************/
+import java.time.LocalDateTime; //Importa a hora atual
+public class Main
+{
+	public static void main(String[] args) {
+		LocalDateTime agora = LocalDateTime.now();
+		
+		if(agora.getHour() >= 0 && agora.getHour()< 12){
+		    System.out.println("Bom dia!");
+		}else if (agora.getHour() >=12 && agora.getHour()<18){
+		    System.out.println("Boa tarde!");
+		}else{
+		    System.out.println("Boa noite!");
+		}
+	}
+}
