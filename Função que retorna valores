@@ -1,0 +1,24 @@
+/******************************************************************************
+Função que retorna valor
+
+Primeiro eu declaro a variável com a função que será executada. Dentro dessa função,
+será passado os parâmetros
+
+Em seguida, cria-se a função para retornar os valores
+*******************************************************************************/
+public class Main
+{
+	public static void main(String[] args) {
+	    int result = soma(2,3);
+	    int valor = soma(7,7);
+	    System.out.println("O resultado da soma é = "+result);
+	    System.out.println("O resultado da soma é = "+valor);
+	}
+	
+	//Passo os parametros que serão executados
+	//Para retornar o valor, usa-se return
+	public static int soma(int a, int b){
+	    return a+b;
+	    
+	}
+}
