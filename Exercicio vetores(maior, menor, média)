@@ -1,0 +1,29 @@
+/******************************************************************************
+Para achar o maior, o menor e a média dos valores dentro de um array, veja o
+exemplo abaixo
+
+JAVA É UMA LINGUAGEM FORTEMENTE TIPADA, ENTÃO NÃO PODEMOS MISTURAR DIFERENTES 
+ESTRUTURA DE DADOS NO MESMO ARRAY
+*******************************************************************************/
+public class Main
+{
+	public static void main(String[] args) {
+		int [] valores = {8,10,42,2,5};
+		int maior = valores[0]; /*Armazena a primeira posição, para depois fazer a comparação, pois
+		só é possível comparar, se houver um valor inicial*/
+		int menor = valores[0];
+		int media = 0;
+		
+		for (int i=0; i<valores.length; i++){
+		    if (valores[i]>maior){
+		        maior = valores[i];
+		    }
+		    if(valores[i]<menor){
+		        menor = valores[i];
+		    }
+		    media+=valores[i];
+		}
+		System.out.println("O maior valor é: "+maior+"\n"+ "O menor valor é: "+menor);
+		System.out.println("A média é: "+ media/valores.length);
+	}
+}
