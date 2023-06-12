@@ -1,0 +1,26 @@
+/******************************************************************************
+Suponhamos que eu chame uma função, mas queira mudar os parâmetros dessa função,
+para isso, irei definir isso na função main, que é o padrão de função para iniciar
+um código em JAVA
+
+Podemos criar funções que recebem paramentros, funções que não recebem paramentros
+e funções que retornam valores
+*******************************************************************************/
+public class Main
+{
+	public static void main(String[] args) {
+	    //Passo os parâmetros aqui 
+	    String nome = "Thalita";
+	    String nome1 = "Fernando";
+	    
+	    saudacao(nome);
+	    saudacao(nome1);
+	}/*Aqui é um escopo, então o que eu coloco de variavel tem que ser a mesma na função
+	que estiver no escopo*/
+	
+	//Declaração de uma função
+	public static void saudacao(String algumaCoisa){ /*Passar um parametro(nome) aqui, posso colocar qualquer nome, não 
+	precisa ser igual ao da variável*/
+	    System.out.println("Hello "+ algumaCoisa);//A variável tem que ser igual ao parâmetro dessa função
+	}
+}
