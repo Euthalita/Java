@@ -1,0 +1,81 @@
+- O que é um objeto?
+	Coisa material ou abstrata que pode ser percebida pelos sentidos e descrita por meio das
+suas características, comportamentos e estado atual.
+Por exemplo, uma caneta bic, exitem várias cores de caneta bic e elas seguem o mesmo modelo
+(formato), ou seja, seguem a mesmo CLASSIFICAÇÃO.
+TODO OBJETO TEM QUE VIM DE UMA CLASSE
+
+-Classe
+É o modelo do objeto, como ele é projetado e planejado, ou seja, é o formato, a representação do
+objeto(no exemplo, a caneta), ou seja, antes de criar o objeto em si, faz-se a projeção do mesmo,
+que é a classe.
+O objeto em si, é a caneta e a classe seria o desenho de como será o objeto, ou seja, existem diversos
+tipos de caneta e a classe é o que molda o estilo da caneta bic. Por exemplo, há diversos modelos
+de caneta, com tampa, sem tampa e no caso da caneta bic, a classe dela determina que ela possuirá
+tampa
+A classe leva em consideração três coisas para formar o objeto:
+	-O que o objeto possui (ATRIBUTO)
+	-O ele faz (MÉTODO)
+	OBS:Todo método tem (parenteses) pois ele pode receber parametros
+	-Como ele se encontra no estado atual (ESTADO)
+
+No exemplo da caneta:
+	-Coisa que ela possui: modelo, cor, ponta, carga
+	-Coisas que ela faz: escreve, pinta, rabisca, tampa, destampa
+	-Estado atual: destampada, azul, 50% de carga, está escrevendo
+
+A CLASSE DEFINE OS ATRIBUTOS E MÉTODOS COMUNS QUE SERÃO COMPARTILHADOS POR UM OBJETO
+
+
+Criando uma classe:
+	Classe caneta:
+		modelo: Caractere
+		cor: Caractere
+		ponta: Real
+		carga: Inteiro
+		tampada: Logico
+	Acima foi declarado os atributos de um objeto
+		Metodo rabiscar()   
+		  Se (tampada) então
+			Escreva("ERRO")
+		  senao
+			Escreva("Rabisco")
+		  FimSe
+		FimMetodo
+		
+
+- Instância
+É quando é gerado o objeto a partir da classe. Após montar a classe será feita a instancia para
+criar o objeto, ou seja, é gerado o objeto a partir da classe.
+A classe é instanciada em forma de objeto.
+Veja como é feita a instancia:
+	c1= nova Caneta
+c1 é o o nome do objeto
+Caneta é o nome da classe
+nova serve para instânciar o objeto a partir de uma classe 
+
+É possível criar um atributo para esse objeto, veja:
+	c1.cor = "Azul"
+	c1.ponta = 0.5
+
+Para chamar um método
+	c1.rabiscar()
+
+É possivel criar vários objetos a partir de uma classe, sem relação alguma uns com os outros, a 
+única coisa em comum, é que eles serão da mesma classe, ou seja, eles possuem os mesmos atributos
+(caracteristicas), mas os valores são diferentes.
+	ex: c2 = nova Caneta
+	    c2.cor = "Vermelha"
+	    c2.ponta = 0.7
+	    c2.tampar()
+
+
+-Abstração
+É selecionado os atributos que realmente importam em determinado contexto, como por exemplo,
+em um cadastro de alunos de uma escola, não será importante se a pessoa tem olhos castanhos ou
+verdes, mas em um cadastro de modelos isso é relevante, ou seja, a abstração releva somente os
+atributos que realmente importam. 
+
+Resumindo:
+Classe: Define os atributos e métodos comuns que serão compartilhados por um objeto.
+Objeto: É a instância de uma classe.
