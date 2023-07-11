@@ -1,0 +1,38 @@
+- O que é um objeto?
+	Coisa material ou abstrata que pode ser percebida pelos sentidos e descrita por meio
+das suas características, comportamentos e estado atual.
+Exemplo, carro, controle remoto, compromisso.
+Por exemplo, o compromisso não é algo palpável, porém ele possui características (dia, hora, 
+lugar), comportamento (pode ser marcado, adiado, cancelado) e estado(por enquanto pode estar
+marcado, remarcado,etc).
+
+Tomamos como exemplo uma caneta. O que envolve o molde dessa caneta ?
+Coisas que ela possui:
+- Modelo
+- Cor
+- Ponta
+- Carga
+- Tampa
+
+Coisas que ela faz:
+- Escrever
+- Pintar
+- Rabiscar
+- Tampar/ Destampar
+
+Como se encontra a canta nesse exato momento?
+- 50% de carga
+- Tampada
+- Azul
+- Ponta fina
+
+Quando for fazer a POO é necessário sempre fazer essas perguntas e essas perguntas recebem
+um nome especifico em POO Atibutos(coisas que ela possui/caracteristicas), Metodos
+(coisas que ela faz/comportamento), Estado (como ela se encontra).
+
+TODO OBJETO TEM QUE TER ATRIBUTOS, MÉTODOS E ESTADOS.
+
+Todo objeto vem a partir de uma classe, a classe é como se fosse um molde/projeção(rascunho/desenho)
+feito antes de colocar a caneta no mundo, antes dela ser gerada.
+Antes de criar um objeto, é necessário fazer o planejamento, ou seja, criar classe(molde).
+
