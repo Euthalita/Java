@@ -2,7 +2,7 @@ public class Main
 {
 	public static void main(String[] args) {
 		Garrafa c1 = new Garrafa();
-		//Caneta é a classe
+		//Garrafa é a classe
 		//O c1 é o objeto criado
 		//O new é para instânciar o objeto
 		c1.cor = "Azul";
