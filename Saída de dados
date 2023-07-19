@@ -1,0 +1,28 @@
+No Java podemos escrever o print, println, printf
+O print é usado quando você não quer quebra de linha, já o println é usado 
+para a quebra de linha. 
+Por exemplo, digamos que você irá imprimir duas frases:
+
+System.out.println("Olá mundo!");
+System.out.println(Bom dia!);
+
+Como fica na tela:
+Olá mundo!
+Bom dia!
+
+Veja com o print:
+System.out.print("Olá mundo!");
+System.out.print(Bom dia!);
+
+Na tela:
+Olá mundo! Bom dia!
+
+O printf é usado para formatar a forma que será impresso, por exemplo,
+digamos que você tenha uma variavelno valor de 10.23455 e você queira 
+imprimir somente as duas primeiras casas decimais, você usa o printf
+exemplo:
+  double x = 10.23455;
+  System.out.printf("%.2f%n", x);
+O %.2f é a quantidade de casas após a virgula e o %n faz a quebra de linha
+pode colocar também \n para quebra de linha
+  
