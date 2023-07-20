@@ -1,0 +1,8 @@
+Linguagem de Modelagem Unificada(UML) 
+A UML simplifica e deixa padrão de como criar uma classe.
+A UML simplifica a representatividade do Diagrama de classes
+Por exemplo, quando cria uma classe, sempre recebe o nome com a primeira letra maiuscula, isso é 
+padrão, e os atributos e metodos são com letra minusculas. Os atributos não recebem parentese, já
+os métodos sim, então é possivel diferenciar o nome da classe, atributos e métodos, seguindo esse 
+padrão, isso é a UML, ela padroniza a representação das classes(Diagrama de classes).
+
