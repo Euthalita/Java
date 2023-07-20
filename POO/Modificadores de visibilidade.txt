@@ -1,0 +1,26 @@
+Modificadores de visibilidade
+Indicam o nível de acesso aos componentes internos de uma classe, ou seja, o acesso que você terá
+aos atributos e métodos.
+
+Simbolos utilizados
++ - #
+
++ público
+- privado
+# protegido
+
+Vamos desmistificar com exemplo, com um telefone. Há telefones que são publicos, qualquer pessoa
+pode usar, como um orelhão, por exemplo.
+Há telefones que são privados, por exemplo, o seu celular, somente você pode ver, usar e acessar.
+E há telefones que são protegidos, somente pessoas especificas, de um determinado núcleo pode usar,
+como por exemplo, em uma familia, o telefone só pode ser utilizado pela mãe e os filhos dela.
+
+Em POO, esses conceitos são utilizados nas classes. Todo atributo e método definido como:
+
++ Publico = a classe atual e todas as outras classes tem acesso
+- Privado = somente a classe atual tem acesso e pode utiliza-los
+# Protegido = a classe atual e todas as suas sub-classes
+
+Por que tornar público, privado ou protegido?
+Por exemplo, um controle remoto, dentro dele há partes protegidas que não podem ser acessadas ou
+mexidas para não danificar 
