@@ -2,6 +2,9 @@
  Java é uma linguagem fortemente tipada, ou seja, é necessário informar o tipo 
  de variável (qual informação será guardada dentro da variável), veja o exemplo abaixo.
  No Java, é necessário sempre colocar o ponto e vírgula.
+
+Para representar letras utilizamos o String e o char
+O char é usado para representar somente uma variável
  
 *******************************************************************************/
 public class Main
@@ -10,6 +13,7 @@ public class Main
 /*Conforme eu atribuo novos valores á mesma variável, o ultimo valor é o que será impresso,
  o ultimo valor será sobreposto sobre os anteriores.*/
 	    String nome = "Thalita";
+	    char sexo = "F";
 
 /* Uma vez declarado o tipo de variável, não será necessário declarar novamente, se caso
  for atribuido um novo valor aquela variável.*/
