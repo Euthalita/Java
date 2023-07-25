@@ -1,0 +1,26 @@
+A variável A recebe a raiz quadrada de x
+
+A = Math.pow(x, y);
+A variável A recebe o resultado de x elevado a y
+
+A = Math.abs(x);
+A variável A recebe o valor absoluto de x(é usado para negativos, quando você quer o valor absoluto(positivo)
+
+Exemplo:
+{
+	public static void main(String[] args) {
+	    double x = 3.0;
+	    double y = 4.0;
+	    double z = -5.0;
+	    
+	    double A, B, C;
+	    
+	    A = Math.sqrt(x);
+	    B = Math.pow(y,x);
+	    C = Math.abs(z);
+	    System.out.printf("A raiz quadrada de 3 é %.2f%n", A);
+	    System.out.printf("4 elevado a 3 é igual a %.1f%n", B);
+	    System.out.println("O valor absoluto de -5 é " + C);
+	    
+	}
+}
