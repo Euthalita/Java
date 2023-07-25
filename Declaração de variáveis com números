@@ -33,5 +33,17 @@ Para representar um número double, sempre utiliza-se o ponto, mesmo que seja um
 	double x = 2.0;
 Para representar um float, utiliza-se o f, exemplo:
 	float y = 2f;
+
+O mesmo vale de double para int, se eu quiser transferir a variavel de double para int, dará erro,
+por isso é necessário fazer o cast também.
+Exemplo:
+
+double a = 5.0;
+int b = a; (ERRO)
+
+Forma correta:
+int b = (int) a;
+
+O valor saíra em int
 	}
 }
