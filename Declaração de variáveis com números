@@ -26,6 +26,7 @@ CAST.
 O cast é uma forma de mudar a forma como será demonstrado, apesar de continuar armazenada como int.*/
     int e = 7, f = 6;
     divisao = (float) e/f; /*O cast é o (float)*/
+    divisao = (double) e/f;
     System.out.println(divisao);
 
 Para representar um número double, sempre utiliza-se o ponto, mesmo que seja um número inteiro, exemplo:
