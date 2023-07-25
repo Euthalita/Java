@@ -1,0 +1,119 @@
+Para fazer entrada de dados, nós vamos criar um objeto do tipo "Scanner" da seguinte forma:
+Para o Scanner funcionar, é necessário importar essa função com o import
+
+import java.util.Scanner 
+
+Scanner ler = New Scanner(System.in);
+O "ler" é o nome do objeto
+
+Quando não precisar mais usar esse objeto, é necessário colocar a função  "ler.close()"
+
+	- INSERINDO DADOS COMO STRING
+EXEMPLO:
+Você quer que o usuario do seu programa informe o nome(texto sem espaços)
+
+import java.util.Scanner;
+public class Main
+
+{
+	public static void main(String[] args) {
+	    Scanner ler = new Scanner(System.in);
+	    String nome;
+	    System.out.println("Insira seu nome:");
+	    nome = ler.next();
+O ler.next() permite que insira a palavra(dado) que será armazenada na variável nome
+	    System.out.println("Olá "+ nome + "!");
+		
+	    ler.close();
+		
+	}
+}
+
+
+	- INSERINDO DADOS COMO INT
+Usa-se o ler.nextInt()
+
+import java.util.Scanner;
+public class Main
+
+{
+	public static void main(String[] args) {
+	    Scanner ler = new Scanner(System.in);
+	    int x;
+	    System.out.println("Insira um número: ");
+	    x = ler.nextInt();
+	    System.out.println("O valor inserido foi: " + x);
+		
+		ler.close();
+		
+	}
+}
+	
+	-INSERINDO DADOS COM DOUBLE
+Usa-se o ler.nextDouble()
+
+import java.util.Scanner;
+public class Main
+
+{
+	public static void main(String[] args) {
+	    Scanner ler = new Scanner(System.in);
+	    double valor;
+	    System.out.println("Digite um valor: ");
+	    valor = ler.nextDouble();
+	    System.out.println("O valor digitado foi: " + valor);
+	    
+		ler.close();
+	}
+}
+
+	-PARA INSERIR UMA FRASE
+Usa-se o ler.nextLine()
+
+import java.util.Scanner;
+public class Main
+
+{
+	public static void main(String[] args) {
+	   Scanner ler = new Scanner(System.in);
+	   String nome;
+	   System.out.println("Insira seu nome completo: ");
+	   nome = ler.nextLine();
+	   System.out.println("Seu nome completo é " + nome);
+	   
+	   ler.close();
+	}
+}
+ATENÇÃO: Quando você usa um comando de leitura diferente do nextLine() e dá alguma quebra de linha,
+essa quebra de linha fica "pendente" na entrada padrão.
+Se você fizer um nextLine(), aquela quebra de linha pendente será absorvida pelo nextLine().
+ENTÃO É NECESSÁRIO FAZER UM nextLine() EXTRA ANTES DE FAZER O nextLine() DE SEU INTERESSE, PARA O 
+PROGRAMA NÃO CONSUMIR A LINHA ANTERIOR.
+
+
+	-DECLARANDO VÁRIOS DADOS NA MESMA LINHA
+import java.util.Scanner;
+public class Main
+
+{
+	public static void main(String[] args) {
+	    Scanner ler = new Scanner(System.in);
+	    String nome;
+	    int idade;
+	    double peso;
+	    System.out.println("Insira seu nome, idade e peso:");
+	    nome = ler.next();
+	    idade =  ler.nextInt();
+	    peso = ler.nextDouble();
+	    System.out.printf("Seu nome é %s, sua idade é %d e seu peso é %.2f", nome, idade, peso);
+	   
+	}
+}
+
+ 
+RESUMINDO:
+Para inserir dados, usa-se a função Scanner.
+next() = Dados do tipo String
+nextLine() = Dados do tipo String, usado por exemplo, para strings com espaços(frases)
+nextInt() = Dados do tipo int
+ler.nextDouble() = Dados do tipo Double
