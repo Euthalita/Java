@@ -1,6 +1,7 @@
 Modificadores de visibilidade
 Indicam o nível de acesso aos componentes internos de uma classe, ou seja, o acesso que você terá
 aos atributos e métodos.
+É importante sempre colocar a visibilidade quando se trabalha com mais de um pacote. 
 
 Simbolos utilizados
 + - #
