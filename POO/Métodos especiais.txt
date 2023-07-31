@@ -1,0 +1,26 @@
+	- Métodos acessores(Getters)
+São métodos usados para puxar alguma coisa(informação) e também proteger o objeto do acesso de 
+pessoas não autorizadas, por questões de segurança.
+O uso do get permite o acesso a determinados atributos de um objeto, mas mantendo a segurança de 
+acesso á ele.
+É como se fosse usado para consultar um atributo privado ou protegido, e para editar ou adicionar um
+novo valor ao atributo que está privado, usamos o set.
+
+	- Métodos modificadores(Setters)
+É usado quando você quer modificar um atributo ou adicionar um novo valor, para isso, é usado o set.
+Isso é necessário para manter uma segurança, pois não é qualquer pessoa que pode mexer e ter acesso 
+aos métodos.
+É como se fosse usado para enviar ou alterar uma informação e para acessar e visualisar essa informação,
+utiliza-se o get.
+
+OBS: Geralmente os atributos ficam privados.
+
+SET = atribui valor
+GET = obter valor
+
+Esse métodos de não expor diretamente os atributos para manipulação é chamado de ENCAPSULAMENTO
+
+	- Método construtor
+
+
+
