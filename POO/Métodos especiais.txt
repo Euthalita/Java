@@ -21,6 +21,13 @@ GET = obter valor
 Esse métodos de não expor diretamente os atributos para manipulação é chamado de ENCAPSULAMENTO
 
 	- Método construtor
+Esse método define o estado que o objeto iniciara, ou seja, ele ja dá a definição inicial, como por
+exemplo, se for uma caneta, esse método irá dizer o estado inicial que o objeto estará. 
+A caneta pode iniciar estando fechada e com a carga 100% completa, por exemplo.
+(O exemplo está na pasta "encapsulamento")
+É executado sempre que uma nova classe for instânciada, ou seja, virar um objeto.
+
+
 
 
 
