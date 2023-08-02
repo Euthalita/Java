@@ -1,0 +1,46 @@
+	-Método sem retorno e/ou parâmetro
+Usa-se o void + o nome do metodo. O void é usado quando o método não possui retorno
+Exemplo:
+public void exibirCor(){
+   System.out.println("O livro é "+ this.cor);
+}
+
+OBS: NÃO É ACONSELHADO A SAÍDA DE DADOS PELO MÉTODO, GERALMENTE USA-SE O RETURN
+O MÉTODO GERALMENTE RECEBE O NOME COM UM VERBO, VISTO QUE, ELE RETORNA UMA AÇÃO
+	
+	-Método com retorno
+Para criar esse método, primeiro informar o tipo de valor que será retornado + nome
+public void obterDesconto(){
+   return preco * 0,1
+}
+Por ser um valor númerico, eu posso atribuir a chamada do método a uma variável. Veja:
+double desconto = livro.obterDesconto();
+System.out.println("O livro ficara com desconto de "+ desconto);
+
+	-Método com parâmetro
+O parametro é usado para passar uma informação que não está disponível na classe, por exemplo,
+suponhamos que eu tenha um objeto carro e ele não fornece km percorrido, então eu coloco como parametro
+a quantidade de km percorrido para ele me retornar o consumo de combustível. Exemplo:
+public class Carro(){
+{
+    //Atributos
+    String modelo, marca, cor;
+    double consumoCombustivel;
+    
+    double calcularCombustivel(double km){
+        double qtdCombustivel = km/consumoCombustivel;
+        return qtdCombustivel;      
+    }  
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Carro c1 = new Carro();
+	    c1.consumoCombustivel = 15;
+	    double qtdComb = c1.calcularCombustivel(10);
+	    System.out.printf("%.2f",qtdComb);
+}
+}
+
+ 
