@@ -1,4 +1,3 @@
-/******************************************************************************
 O operador ternario é usado quando tem dois comportamentos possíveis 
 Operador ternario = ?
 
@@ -6,7 +5,7 @@ Esse Operador recebe o nome de ternario, porque há 3 sentenças;
 A primeira, avalia a questão (no exemplo abaixo é a variavel "fimDeSemana");
 Em segundo, mostra qual das duas msgs será impressa (há duas msg).
 Por isso, são 3 sentenças.
-*******************************************************************************/
+
 public class Main
 {
 	public static void main(String[] args) {
@@ -21,3 +20,33 @@ public class Main
 	System.out.println(mensagem);
 	}
 }
+
+	-Expressão condicional ternária
+Estrutura opcional ao if-else quando se deseja decidir um VALOR com base em uma condição
+
+Sintaxe:
+(condição) ? valor_se_verdadeiro : valor_se_falso
+
+Exemplos;
+(2 > 4) ? 50:80 
+
+O "?" simboliza se é verdadeiro ou falso e o 50:80 é a resposta, se a condição for verdadeira, será
+impresso o 50, se for falsa, será impresso o 80
+A condição 2 > 4 é falsa, então no caso, será impresso o valor 80 
+
+Vamos ver o exemplo com o if/else e com a condição ternária
+- IF/ELSE
+
+double preco = 34.5;
+double desconto;
+if (preco < 20.0) {
+	desconto = preco * 0.1;
+} else {
+	desconto = preco * 0.05;
+}
+
+- CONDIÇÃO TERNÁRIA
+
+double preco = 34.5;
+double desconto = (preco < 20) ? preco * 0.1 : preco * 0.05;
+System.out.println(desconto)
