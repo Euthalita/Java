@@ -4,13 +4,16 @@ public class Main
 	public static void main(String[] args) {
 		Scanner ler = new Scanner(System.in);
 		System.out.println("Escreva um número ou tecle 0 para parar.");
-		
-    int num = ler.nextInt();
+		int num = ler.nextInt();
+		int soma=0;
 		while (num != 0){
+		    soma += num; /*ATENÇÃO: O acumulador tem que estar embaixo do while, porque se for inserido depois dos 
+		    comandos, ele não executa */
 		    System.out.println("Escreva um número:");
 		    num = ler.nextInt();
+		    
 		}
-		
+		System.out.println("A soma dos números é "+ soma);
 		ler.close();
 		
 	}
