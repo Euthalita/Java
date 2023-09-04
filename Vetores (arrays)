@@ -7,9 +7,11 @@ public class Main
 {
 	public static void main(String[] args) {
 	    /*É necessário identificar quantos números será guardado no array, declarando o tipo (new int) 
-	    e a quantidade detro dos [].
+	    e a quantidade dentro do [] que está apos o new.
 	    O array guarda somente a quantidade de valor informado, no exemplo abaixo, são cinco, não pode 
 	    acrescentar mais valores á esse array.
+	    Podemos também informar a quantidade de valor informado dentro de uma variável, assim fica mais
+	    fácil trocar, caso seja uma código muito grande.
 	    
 	    O exemplo abaixo, o array recebe 5 valores e cada valor contém uma posição, começando do 0
 	    */
@@ -21,7 +23,11 @@ public class Main
 	   	numeros[2] = 5;
 		numeros[3] = 6;
 		numeros[4] = 6;
-		
+
+		//Exemplo guardando a quantidade de valores que será armazenado em um array com uma variável
+		int num = 5;
+		int[] numeros = new int[num]; 
+	
 		//Dessa forma, é informado o endereço de memória em que o array está armazenado
 		System.out.println(numeros);
 		
