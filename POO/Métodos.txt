@@ -10,6 +10,7 @@ O MÉTODO GERALMENTE RECEBE O NOME COM UM VERBO, VISTO QUE, ELE RETORNA UMA AÇ�
 	
 	-Método com retorno
 Para criar esse método, primeiro informar o tipo de valor que será retornado + nome
+Exemplo:
 public static double obterDesconto(){
    return preco * 0,1
 }
@@ -27,7 +28,7 @@ public class Carro(){
     String modelo, marca, cor;
     double consumoCombustivel;
     
-    double calcularCombustivel(double km){
+    double calcularCombustivel(double km){    (Não é a forma recomendada, o certo é utilizar o public static)
         double qtdCombustivel = km/consumoCombustivel;
         return qtdCombustivel;      
     }  
