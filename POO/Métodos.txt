@@ -10,7 +10,7 @@ O MÉTODO GERALMENTE RECEBE O NOME COM UM VERBO, VISTO QUE, ELE RETORNA UMA AÇ�
 	
 	-Método com retorno
 Para criar esse método, primeiro informar o tipo de valor que será retornado + nome
-public void obterDesconto(){
+public static double obterDesconto(){
    return preco * 0,1
 }
 Por ser um valor númerico, eu posso atribuir a chamada do método a uma variável. Veja:
