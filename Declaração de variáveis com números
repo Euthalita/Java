@@ -5,6 +5,16 @@ usamos o float, porém, todos os números envolvidos será usado o float
 Para números com ponto flutuante, utilizamos o double e o float, com a diferença entre
 eles da quantidade de números que será possível armazenar.
 
+Obs: A variavel do tipo int, long não pode começar com 0, quando a variavel inicia com 0,
+seria necessário declara-la como String
+Geralmente não utilizamos o float mas o double, por ele guardar um valor maior de
+numeros na memoria.
+
+Quando a variavel é do tipo float, é necessário declarar um "F" ao final do valor,
+visto que, o Java entende o float como double se nao for declarado o F no final.
+Para o mesmo vale o long.
+Ex : float PI = 3.14F;
+     long valor = 1234L;
 *******************************************************************************/
 public class Main
 {
