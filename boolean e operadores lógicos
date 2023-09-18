@@ -16,5 +16,10 @@ public class Main
 		System.out.println("Sim, vamos a praia "+vamosApraia);
 		
 	//O operador OU é o || 
+	//Para comparar dois objetos utilizamos o equals
+		String nome = New String ("João");
+		String nome2 = New String ("João");
+		System.out.println(nome.equals(nome2));
+
 	}
 }
