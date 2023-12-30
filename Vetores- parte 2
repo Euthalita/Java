@@ -1,0 +1,64 @@
+No Java há duas formas de usar a estrutura de repetição for para vetores.
+1- É necessário criar uma variável do mesmo tipo do vetor
+int vet [ ] = {4, 8, 3, 1, 9};
+for (int valor: vet) {
+System.out.println(valor)
+}
+A variável "valor" é alimentada pelos valores que estão no vetor, então será a variável que será impressa.
+
+2- O uso do for comumentemente usado, no qual, é possivel fazer maiores alterações na saída de dados. Veja duas formas:
+a)
+for(int i=0; i<number.length; i++){
+    System.out.printf(" Na posiçao %d °, o numero é %d%n", i, number[i]);
+  }
+b)
+ATENÇÃO!!!
+Nao da pra usar %d com println no caso de vetores, tem que usar o printf quando o length é usado, isso acontece porque o length retorna uma String, então ele transforma os valores em strings
+Quando utiliza o pritln, poderá ser usado somente a concatenação com "+", com o printf usa-se o %d.
+for(int i=0; i<number.length; i++){
+    System.out.println(" Na posiçao"+ i + "°, o numero é"+ number[i]);
+    }
+Ambas as abordagens são válidas. A escolha entre printf e println depende da necessidade de formatação específica.
+‌Valores em ordem
+Para colocar os valores do vetor em ordem, usa-se uma classe ja pronta do Java, veja:
+import java.util.Arrays;
+Arrays.sort(vet);
+
+Atenção!!!
+Quando usa-se a estrutura de repetição for(int i=0; i<5) e dentro dela chamar e imprimir a classe Array.sort, mostrara o endereço de memoria, ja na estrutura de repetição simplificada do for para arrays, sera impresso o valor
+Exemplo:
+for(int valor: vet){
+      Arrays.sort(vet);
+      System.out.print(valor+", ");
+}
+Mas atençāo, quando a classe arrays é chamada somente dentro do escopo do for, ela irá atuar somente ali, caso queira alterar tudo, é necessario chamar a classe no inicio do programa
+ATENÇAO!
+Quando a classe Arrays é declarada dentro do for, ela pula o primeiro numero da ordem e repete 2x o numero que esta na 2° posiçao quando esta fora da ordem
+Exemplo:
+int vet [ ] = {4, 8, 3, 1, 9};
+for(int valor: vet){
+      Arrays.sort(vet);
+      System.out.print(valor+", ");
+}
+Tela: 
+4, 3, 4, 8, 9
+
+‌Pesquisando um valor
+Para pesquisar um determinado valor em um array, usa-se um método da biblioteca java.util.Arrays.
+Para utiliza-la, é necessario criar uma variável para receber o método. Veja:
+int vet[ ] = {5, 2, 8, 3, 9};
+int valor = Arrays.binarySearch(vet, 2);
+System.out.println("O valor 2 esta na posiçao posição" + valor);
+O parametro será o vetor que sera pesquisado e a chave ( valor a ser pesquisado e retorna a posiçao).
+No exemplo acima, o valor 2 esta na posiçao 1.
+
+‌Preenchimento automatico
+Para preencher todo o vetor com os mesmos valores, usa-se Arrays.fill
+int vet [ ] = new int [20];
+Arrays.fill(vet, 5);
+
+O vet será preenchido com 5, todas as 20 posiçoes
+
+
+
+
