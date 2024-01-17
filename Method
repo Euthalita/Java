@@ -1,0 +1,58 @@
+No Java as funções são conhecidas como métodos. 
+Vamos análisar a classe principal do Java "public static void main(String [ ] args){ "
+O uso do void mostra que é um procedimento e não retorna valores e o main é um método(rotina)
+Quando há o void, é um método que não retorna valores.
+O String [ ] é um vetor, dentro do método, ou seja, um parâmetro
+
+O método main é estático e serve para classe,  então, não é possível chamar um procedimento(void) dentro de um método estatico se esse void tambem nao for estatico.
+Então se eu crio um método com void, nao é possivel instanciar na classe main. Exemplo:
+
+void soma(int a, int b){
+   int s = a+b;
+   System.out.print("A soma é" + s);
+}
+public static void main(String [ ] args){ 
+       soma(4, 6);
+}
+Ocorrerá um erro, para resolver esse problema, é necessário utilizar o static no método soma.
+O  uso do static é aplicado no método quando ele é chamado na classe principal, NÃO PODE ser parte de um instanciamento de objeto, ou seja, nao pode chamar um método NÃO estático, dentro um método estático (no caso, a classe main).
+  static void soma(int a, int b){
+
+Há outra forma de usar métodos, que é a melhor forma, nesse caso é retornado o valor .
+static int soma(a, b){
+  int s = a+b;
+  return s;
+}
+Quando o método retorna valor, fica mais fácil de manipular a forma de exibição(saída de dados), pois pode ser alterada facilmente.
+Atenção!! 
+Dessa forma não é obrigatorio o uso do static, pode ser usado sem, porém nesse caso é obrigatório o uso, visto que, é usado dentro de um método static
+Note que dessa forma é informado o tipo de valor que será retornado.
+Exemplo:
+class Main {
+  static int soma (int a, int b){
+    return a + b;
+  }
+  public static void main(String[] args) {
+    int s = soma(1, 2);
+    System.out.println("A soma é:  "+ s);
+    System.out.println("O resultado dessa soma é: " + s);
+  }
+}
+
+Caso o método esteja em outro arquivo, em outra classe, com o public na frente, significa que ele pode ser acessado por qualquer pessoa ou qualquer codigo.
+ Para utilizar esse método é necessário puxar o nome da classe do outro arquivo e em seguida usar o método. Exemplo:
+class Soma {
+public static int mais (int a, int b){
+  return a + b;
+ }
+}
+Em outro arquivo:
+class Main {
+  public static void main(String[] args) {
+    int s = Soma.mais(1, 2);
+    System.out.println("A soma é:  "+ s);
+  }
+}
+
+    
+
