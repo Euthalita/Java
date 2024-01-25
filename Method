@@ -16,6 +16,7 @@ public static void main(String [ ] args){
 }
 Ocorrerá um erro, para resolver esse problema, é necessário utilizar o static no método soma.
 O  uso do static é aplicado no método quando ele é chamado na classe principal, NÃO PODE ser parte de um instanciamento de objeto, ou seja, nao pode chamar um método NÃO estático, dentro um método estático (no caso, a classe main).
+Se o método fizer parte de uma classe e for instanciado em um objeto, é possivel usar sem o static.
   static void soma(int a, int b){
 
 Há outra forma de usar métodos, que é a melhor forma, nesse caso é retornado o valor .
