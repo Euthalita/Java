@@ -20,7 +20,7 @@ public class Carro
     }
     
     /* MÉTODO CONSTRUTOR (O objeto iniciará com esses valores)
-    O método construtor só utiliza o public e o nome da função */
+    O método construtor só utiliza o public e o mesmo nome da classe */
     public Carro(){ 
         this.cor = "Branco";
         this.modelo = "Fiat Uno";
