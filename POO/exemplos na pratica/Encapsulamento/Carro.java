@@ -31,7 +31,7 @@ public class Carro
     }
     /*Outra forma de declarar o metodo constructor é que ele pode ser passado com
     parametros diretamente, o que o torna mais pratico.
-Exemplo:
+Exemplo:*/
 public class Carro{
       private String cor, modelo;
 
@@ -40,10 +40,10 @@ public Carro(String color, String modelo){
           this.modelo = modelo;
     }
 }
-Criando o objeto já com o método constructor
+/*Criando o objeto já com o método constructor
     Caneta c1 = new Caneta("preta", "Bic");
 
 Para fazer com o método set (não utiliza o get) no método constructor, é necessário 
-ter  os métodos especiais criados.
+ter  os métodos especiais criados.*/
     
 }
