@@ -40,10 +40,10 @@ public Carro(String color, String modelo){
           this.modelo = modelo;
     }
 }
-/*Criando o objeto já com o método constructor
+/*Criando o objeto já com o método constructor:*/
     Caneta c1 = new Caneta("preta", "Bic");
 
-Para fazer com o método set (não utiliza o get) no método constructor, é necessário 
+/*Para fazer com o método set (não utiliza o get) no método constructor, é necessário 
 ter  os métodos especiais criados.*/
     
 }
