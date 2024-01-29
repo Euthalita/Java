@@ -1,0 +1,33 @@
+A interface é uma lista de serviços fornecidos por um componente. É o contato com o mundo exterior, que define o que pode ser feito com um objeto dessa classe.
+A interface é como se fosse um molde, na qual, as outras classes irão usar como padrão, ou seja, contém especificações para outras classes.
+A interface possui métodos que serão implementados(herdados) pelas outras classes, e todos os métodos da interface serão usados obrigatoriamente.
+Um objeto bem encapsulado, possui uma interface bem definida e geralmente fica em um arquivo separado.
+
+
+- Métodos abstratos 
+Os métodos abstratos são métodos que são declarados na interface, mas não recebem funcionalidades.
+Na interface, vai apenas uma assinatura dos métodos, visto que, os métodos da interface só serão especificados na classe que o chamar.
+Por exemplo, suponha que eu tenha diversos tipos de animais(objetos) e cada animal se movimenta de uma forma diferente, para fazer o molde desse movimento, é necessario criar uma interface com o método mover, que será especificado por uma outra classe.
+Na interface, o método sera apenas uma assinatura e TODOS OS MÉTODOS SÃO PUBLICOS
+ Exemplo:
+public interface Animals{
+       public abstract void mover( );
+       public abstract void comer( );
+}
+
+Agora, iremos criar uma classe que irá implementar a interface animals.
+
+public class SerVivo implements Animals {
+    public Boolean mover( ){
+         If(mover== true){
+             
+Outro exemplo, um controle remoto, que possui uma capsula (capa) para proteger os componentes internos, nessa capsula há os botões que possuem ilustrações, descrevendo a funcionalidade de cada um, ou seja, é o que fica disponivel para o usuário, isso é a interface, a maneira com que o usuário interaje com o objeto.
+Os controles podem ter a mesma interface, mas as funcionalidades de cada botão, sao diferentes, visto que, há controle remoto pra cada aparelho, eles recebem a mesma interface, porém o controle da tv, nao funciona com o DVD, por exemplo. Os controles possuem o mesmo botões, mas a funcionalidade por trás de cada um, é diferente
+
+Resumindo: sera criada uma interface com os métodos(pode possuir atributos, mas nao é usual), esses métodos na interface, não possuirão comandos, os comando serão dados após você implementar a interface em uma outra  classe.
+A partir de então, será criado o objeto e atribuído os parametros para os métodos, seja da interface, seja das classes padrão.
+
+         
+         
+          
+        
