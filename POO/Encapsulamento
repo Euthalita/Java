@@ -1,0 +1,13 @@
+Em Java, encapsulamento é a prática de esconder os detalhes de implementação de uma classe, e expor apenas uma interface pública para interagir com ela. Isso significa que os atributos de uma classe devem ser privados e o acesso a eles deve ser feito somente por meio de métodos públicos.
+O encapsulamento serve para proteger o código, torna-lo mais fácil de utilizar e reutilizar em outros programas, dar manutenção, etc.
+O encapsulamento é como uma camada protetora, no qual o usuário não precisa conhecer e nem ter acesso, e dependendo do software, o programador tambem não.
+Por exemplo, dentro de uma pilha há componentes que nao podemos ter acesso e nem precisamos saber sobre seu funcionamento, ou seja, eles estão dentro de uma capsula de proteção.
+No encapsulamento, há a interface que é como se fosse o molde, no qual, você pode utilizar em varios objetos. Vamos usar novamente o exemplo da pilha, a pilha possuí as extremidades e o formato, que se encaixam em vários objetos(controles), isso seria a interface.
+Outro exemplo, é o controle remoto, dentro dele há os componentes internos, que são encapsulados pela carcaça, a interface são os botões que especificam para que serve, o que faz.
+A interface é a lista de serviços fornecidos por um componente. É o contato com o mundo exterior, que define o que pode ser feito com um objeto dessa classe.
+A interface é o que fica disponivel para que o usuário interaja, é a camada externa
+
+- Vantagens de se encapsular
+1. Tornar mudanças invisíveis
+2. Facilitar reutilização do código
+3. Reduzir efeitos colaterais 
