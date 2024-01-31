@@ -1,4 +1,8 @@
-	- Métodos acessores(Getters)
+Para modificar ou colocar valores aos atributos, podemos utilizar os métodos especiais. Esses métodos são usados para ter uma proteção maior, visto que, o usuário não terá permissão para ter acesso direto aos atributos.
+Todo método get e set é público, pois é onde o usuário terá acesso para atribuir valores, dados..
+Sempre utiliza-se o this para referenciar o atributo quando é usado os métodos especiais
+
+     - Métodos acessores(Getters)
 São métodos usados para puxar alguma coisa(informação) e também proteger o objeto do acesso de 
 pessoas não autorizadas, por questões de segurança.
 O uso do get permite o acesso a determinados atributos de um objeto, mas mantendo a segurança de 
