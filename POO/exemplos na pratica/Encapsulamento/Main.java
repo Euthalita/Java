@@ -6,6 +6,7 @@ public class Main
 	    c1.setMarca("Fiat");
 	    
 	    //Para puxar o valor atribuido
+	    //Com o get, é necessário colocar o System, caso contrario, não roda
 	    System.out.println(c1.getMarca());
 	    
 	    c1.setCarga(50);
