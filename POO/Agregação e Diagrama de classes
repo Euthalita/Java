@@ -1,0 +1,21 @@
+Agregação é um mecanismo de reaproveitamento (reutilização) de classes utilizado pela POO para aumentar a produtividade e a qualidade no desenvolvimento de software.
+Quando um atributo abstrato(vem de outra classe, ou seja, nao é um atributo primitivo) é instanciado por uma outra classe, ele está sendo agregado.
+A agregação é uma ligaçao entre as classes, como se fosse, por exemplo, os botões do controle remoto, para o botão de aumentar volume funcionar, é necessário que o botão de ligar tenha sido usado para que o aparelho esteja ligado, e assim, funcionar o volume, ou seja, há uma relação entre as funcionalidades.
+A agregação é, por exemplo, a classe B tem um  atributo que é da classe A
+Por exemplo:
+
+//Suponha que a classe Luta seja a classe B e o atributo abstrato Lutador, seja a Classe A
+public class Luta{
+  //Atributos
+  private Lutador desafiado; // tipo abstrato 
+  private Lutador desafiante;
+  private String ganhador;
+}
+O atributo desafiado está sendo instânciado pela classe Lutador
+
+Veja na pasta exemplos na pratica, o funcionamento de agregação com maiores informações
+
+
+     Diagrama de classes
+
+No Diagrama de classes há a multiplicidade, relaçao de um para vários, etc; é parecido com a cardinalidade do banco de dados. No banco de dados era a relação entidade e relacionamento, no Diagrama de classes é a relação de classes e relacionamento 
